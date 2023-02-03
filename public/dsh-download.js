@@ -70,6 +70,7 @@ function fetchData(event) {
         })
         .catch(err =>{ 
             console.log(err.message)
+            alert('Server connection error', 'error')
         })
 
 }
@@ -93,4 +94,17 @@ function dataGen(data) {
     }
 
     return dataXLSX
+}
+
+function alert(text, icon){
+    Swal.fire({
+        title: text,
+        icon: icon,
+        showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+        }
+    })
 }
