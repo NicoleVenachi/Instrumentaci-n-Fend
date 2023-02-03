@@ -1,0 +1,122 @@
+/* GENERALES */
+
+/*********** FOOter */
+.footer{
+    
+    color: #262626;
+    display: flex;
+    flex-wrap: wrap;
+    height: 25vh;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+
+}
+
+.footer .container {
+    border-top: rgba(127, 127, 127, 0.15);
+    border-style: solid;
+    border-width: 2px;
+
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.footer figure{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+/* Logo Sec */
+.footer .flogo {
+    height: inherit;
+}
+
+.footer .logo{
+    display: block;
+}
+
+.footer .flogo-info{
+    display: block;
+}
+
+.footer h6 {
+    color: rgba(38, 38, 38, 0.7);
+    margin: 0;
+    width: inherit;
+}
+
+/* Tags Sec */
+
+.footer a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+    padding-top: 20px;
+
+    color: rgba(38, 38, 38, 0.8);
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+
+    
+}
+
+.footer .fTags {
+    height: inherit;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer .sTag{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+}
+
+
+@media screen and (max-width: 580px){
+    .footer .container {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .footer {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .footer {
+        display: block;
+    }
+
+    .footer .flogo {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        flex-direction: column;
+    }
+
+    .footer .fTags {
+        display: block;
+
+    }
+  
+    .footer a {
+        padding: 10px 0;
+
+    }
+
+}

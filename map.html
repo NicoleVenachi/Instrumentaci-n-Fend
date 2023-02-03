@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+        <title>Co Plant</title>
+
+        <link rel="icon" type="image/png" href="assets/logorm.png" />
+
+        <link href="https://fonts.googleapis.com/css?family=Inter|Poppins|Oswald" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./public/stylesMap.css">
+        <link rel="stylesheet" href="./public/stylesHeader.css">
+        <link rel="stylesheet" href="./public/stylesFooter.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+        <i id='burger-button' class="icon-menu burger-button"></i>
+        <header class="header">
+            <div class="container">
+                
+                <nav class="menu">
+                    <figure class="logo">
+                        <img src="./assets/logorm.png" height="70" alt="Logo" />
+                    </figure>
+
+                    <div class="tags is-active"> 
+                        <ol>
+                            <li>
+                                <a class="link" href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                
+                                <a class="link" href="./rtm.html">Real Time <br> Monitoring</a>
+                            </li>
+                            <li>
+                                <a class="link" href="./dashboard.html">Dashboard</a>
+                            </li>
+                            <li>
+                                <a class="link onpage" href="#">Map</a>
+                            </li>
+                            <li>
+                                <a class="link" href="./contact.html">Contact Us</a>
+                            </li>
+                        </ol>
+                    </div>
+
+                </nav>
+
+                <div class="login is-active"> 
+                    <ol>
+                        <li>
+                            <a class="link" href="">Log in</a>
+                        </li>
+                        <li>
+                            <a class="link border" href="">Sign up</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </header>
+
+        <section class="extra">
+            <div class="container">
+                <div class="text">
+                    <p class="dsh-text"> Map </p> 
+                    <p class="info"> Easily track your crops </p>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <section class="map">
+            <div class="container">
+
+                <div class="cont-outter left">
+                    <div id="map" class="cont-inner-l up">
+                    </div>
+                    <div class="cont-inner-l down">
+                        
+                        <div class="top-info">
+                            <p class="main-info">
+                                Display each crop info easily
+                            </p>
+
+                            <figure class="word-logo">
+                                <img src="./assets/world-logo.png" alt="Cactus" />
+                            </figure>
+                        </div>
+
+                        <div class="bottom-info">
+                            <p class="display">
+                                Display crops live stats
+                            </p>
+    
+                            <div class="btn-cont">
+                                <div id="btn-window" class="btn-window">
+                                    <p id="btn-window-p"> 
+                                        Window
+                                    </p>
+                                </div>
+
+                                <div id="btn-full" class="btn-full">
+                                    <p> 
+                                        Full map
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                <div class="cont-outter right">
+                    
+                    <div class="cont-inner-r up">
+                        <select name="crop" class="crop" id="crop">
+                            <option value="Crop #1" selected>Crop #1</option>
+                            <option value="Crop #2">Crop #2</option>
+                            <option value="Crop #3">Crop #3</option>
+                          </select>
+    
+                    </div>
+                    <div class="cont-inner-r down">
+                        <p class="sInfo">
+                            Summarized Info
+                        </p>
+
+                        <div class="innerData">
+                            
+                                <div class="btn-info">
+                                    <p id="d-temp"> 
+                                        Temperature:
+                                    </p>
+
+                                    <p id="d-hum"> 
+                                        Humidity:
+                                    </p>
+
+                                    <p id="d-li"> 
+                                        Light Intensity:
+                                    </p>
+
+                                </div>
+                            
+
+                                <div class="btn-irrigate">
+
+                                    <div class="btn-data-cont">
+                                        <div id="btn-irr" class="btn-data irr">
+                                            <p> 
+                                                Irrigate
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="btn-data-cont">
+                                        <div id="btn-aIrr" class="btn-data a-irr">
+                                            <p id="btn-aIrr-p"> 
+                                                Automate Irrigation
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                
+                                    
+                                
+    
+                                </div>
+                                
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="overlay-cont">
+
+            </div>
+
+            <div class="overlay-cactus">
+                <figure class="cacuts">
+                    <img src="./assets/cactus.png" alt="Cactus" />
+                </figure>
+            </div>
+        </section>
+
+       
+
+        <footer class="footer">
+            <div class="container">
+                <div class="flogo">
+                    <figure class="logo">
+                        <img src="./assets/logorm.png" height="70" alt="Logo" />
+                    </figure>
+                    <div class="flogo-info">
+                        <h6> 2023 @CoPlant </h6>
+                        <h6> All rights reserved </h6>
+                    </div>
+                </div>
+                
+
+                <div class="fTags">
+                    <div class="r1 sTag">
+                        <ol>
+                            <li>                                
+                                <a class="link" href="">Home</a>
+                            </li>
+                            <li>
+                                <a class="link" href="">About Us</a>
+                            </li>
+                            <li>
+                                <a class="link" href="">Contact</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="r2 sTag">
+                        <ol>
+                            <li>                                
+                                <a class="link" href="">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="link" href="">Twitter</a>
+                            </li>
+                            <li>
+                                <a class="link" href="">Instagram</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="r3 sTag">
+                        <ol>
+                            <li>                                
+                                <a class="link" href="">Linkedin</a>
+                            </li>
+                            <li>
+                                <a class="link" href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a class="link" href="">Terms of Service</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./public/toggleBtn.js"></script>
+        <script defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5ivmk4uCq1tSBwdkP6YzWHDXsJvNoK7s&callback=initMap&v=weekly">
+        </script>
+        <script src="./public/map.js"></script>
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,302 @@
+
+/******** IMPORST ICOMOOON Para el boton */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?hw778s');
+    src:  url('../fonts/icomoon.eot?hw778s#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?hw778s') format('truetype'),
+        url('../fonts/icomoon.woff?hw778s') format('woff'),
+        url('../fonts/icomoon.svg?hw778s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bb";
+}
+body {
+    background-color: #EDEDED;
+
+}
+
+
+
+/* GENERALES */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+    /* border: 1px solid red; */
+    
+    width: 80vw;
+    
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/************** HEADER **************/
+.header {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.tags{
+    height: inherit;
+}
+.login{
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.header ol li {
+    height: inherit;
+}
+
+.header ol li .border {
+    height: initial;
+    border: 1px solid #3164f4;
+    background: #3164f4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 25px 0; 
+
+    color: white;
+
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+
+    color: #262626;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.header .menu a {
+    padding: 0 20px;
+    
+}
+
+.header .menu .onpage {
+    color: #3164f4;
+    font-weight: 600;
+}
+
+
+/* ********* Brguer button *********/
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: rgba(49, 100, 244, 1);
+
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    right: 10px;
+    top: 30px;
+    color: white;
+}
+
+
+
+/* ************ QUERIES ************ */
+
+@media screen and (max-width: 1023px){
+    .container{
+        width: 90vw;
+    }
+
+    .header .menu a {
+        padding: 0 14px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        width: 100vw;
+    }
+    .burger-button {
+        display: block;
+    }
+
+    /* mlogin */
+    
+    .login {
+        position: fixed;
+        
+        border-radius: 20px 0 20px 0;
+        border: black;
+
+        background-color: rgba(49, 100, 244, 0.7);
+
+        z-index: 4;
+
+        top: 90px;
+        right: 0;
+        bottom: 0;
+        width: 50vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: 1.5s;
+    }
+    .login.is-active{
+        right: 200vw;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+
+    .header a{
+        color: white;
+    }
+    .tags {
+        position: fixed;
+        
+        border-radius: 20px 0 0 0;
+        border-color: rgba(49, 100, 244, 0.7);
+
+        background-color: rgba(49, 100, 244, 0.7);
+        z-index: 4;
+
+        top: 14vh;
+        right: 0;
+        bottom: 0;
+        width: 50vw;
+        height: fit-content;
+
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: 1.5s;
+    }
+    .menu .tags ol {
+        display: flex;
+        flex-direction: column;
+
+        height: fit-content;
+    }
+
+    .menu .tags li{
+        height: 10vh;
+    }
+
+    .tags.is-active{
+        right: 200vw;
+    }
+
+    .header .menu .onpage {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .login {
+        position: fixed;
+        
+        border-radius: 0 0 20px 0;
+        border-color: rgba(49, 100, 244, 0.7);
+
+        background-color: rgba(49, 100, 244, 0.7);
+        z-index: 4;
+
+        top: 64vh;
+        right: 0;
+        bottom: 0;
+        width: 50vw;
+        height: fit-content;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: 1.5s;
+    }
+    .login.is-active{
+        right: 200vw;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+    .login ol {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .login li{
+        height: 10vh;
+    }
+
+    .header ol li .border {
+        margin: 0;
+    }
+}

@@ -1,0 +1,396 @@
+
+
+/************ EXTRA */
+
+.extra{
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100vw;
+
+    margin: 7vh 0 5vh 0;
+}
+
+.extra .text{
+    width: fit-content;
+}
+
+.extra .dsh-text {
+    margin: 0;
+    width: fit-content;
+    font-size: 5vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    color: #030303;
+    font-weight: 600;
+    
+}
+
+.extra .info {
+    margin: 1.5vh 0 0 0;
+    width: 100%;
+
+    font-size: 2.5vh;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+
+    color: rgba(3, 3, 3, 0.5);
+}
+/* **************** DSH  */
+.dsh{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    width: 100vw;
+    height: 225vh;
+    
+    position: relative;
+}
+.dsh .container {
+    z-index: 0;
+}
+
+.dsh .chart {
+    height: 70vh;
+
+    width: 70vw;
+
+    border-bottom: rgba(127, 127, 127, 1);
+    border-style: solid;
+    border-width: 2px;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.dsh .chart .chart-cont{
+    width: auto;
+    height: 68vh !important;
+
+    max-width: 68vw;
+    margin-bottom: 2vh;
+
+    
+}
+
+
+/*********** Chart overlays */
+.dsh .chart {
+    position: relative;
+}
+
+.dsh .chart .d-btn{
+    position: absolute;
+    top: 0vh;
+    left: 40vw;
+    z-index: 2;
+
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+
+    height: 10px;
+    border: 1px solid #3164f4;
+    background: rgba(49, 100, 244, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0; 
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.dsh .chart .d-btn p{
+    margin: 0;
+}
+
+/* ********* OVerlays */
+
+.dsh .overlay-chart-r{
+
+    position: absolute;
+    z-index: 1;
+
+    margin-right: 0;
+    top: -25vh;
+    right: 5vw;
+
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.dsh .overlay-chart-r img{
+
+    height: 40vh;
+    width: auto;
+    
+}
+
+.dsh .overlay-chart-l{
+
+    position: absolute;
+    z-index: 1;
+
+    height: fit-content;
+    width: auto;
+
+    margin-left: 0vw;
+    top: 125vh;
+    left: 5vw;
+
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.dsh .overlay-chart-l img{
+    margin-left: -16.1vw;
+
+    height: 40vh;
+    width: auto;
+}
+
+.dsh .overlay-cloud {
+
+    position: absolute;
+    z-index: 1;
+
+    height: fit-content;
+    width: auto;
+
+    margin-right: 0vw;
+    top: 200vh;
+    right: 5vw;
+}
+
+.dsh .overlay-cloud  img{
+
+    height: 25vh;
+    width: auto;
+}
+
+/**** QUeries */
+
+@media screen and (max-width: 1023px){
+
+    .dsh .chart .d-btn{
+        top: 1vh;
+        left: 40vw;
+    }
+
+    .dsh .overlay-chart-r{
+        top: -20vh;
+    }
+
+    .dsh .overlay-chart-r img{
+        height: 35vh;
+        margin-left: -5vw;
+    }
+
+    .dsh .overlay-chart-l img{
+        height: 30vh;
+        margin-left: -14.3vw;
+    }
+    .dsh .overlay-chart-l{
+        top: 130vh;
+    }
+
+    .dsh .overlay-cloud{
+        top: 202.5vh;
+    }
+    .dsh .overlay-cloud  img{
+        height: 20vh;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+
+    .dsh .chart .d-btn{
+        top: 1.3vh;
+        left: 49vw;
+    }
+
+    .dsh .overlay-chart-r{
+        top: -17vh;
+    }
+
+    .dsh .chart {
+        
+        width: 80vw;
+    }
+
+    .dsh .chart .chart-cont{
+    
+        max-width: 78vw;
+    }
+
+    .dsh .overlay-chart-l img{
+        margin-left: -22.4vw;
+    }
+
+    .dsh .overlay-cloud {
+        overflow: hidden;
+    }
+
+    .dsh .overlay-cloud  img{
+        margin-right: -5vw;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    .dsh .chart .d-btn{
+        top: 6.9vh;
+        left: 54vw;
+    }
+
+    .dsh .overlay-chart-r{
+        top: -15vh;
+    }
+    .dsh .chart {
+        
+        width: 90vw;
+    }
+
+    .dsh .chart .chart-cont{
+    
+        max-width: 88vw;
+        height: 62vh !important;
+    }
+
+
+    .dsh .overlay-chart-r{
+        right: 0vw;
+    }
+
+    .dsh .overlay-chart-r img{
+        margin-left: -10vw;
+    }
+
+
+    .dsh .overlay-chart-l{
+        top: 135vh;
+        left: -2vw;
+    }
+    .dsh .overlay-chart-l img{
+        height: 30vh;
+        margin-left: -22.4vw;
+    }
+
+    .dsh .overlay-cloud {
+        right: 0vw;
+    }
+
+    .dsh .overlay-cloud  img{
+        margin-right: -10vw;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    .dsh .chart .d-btn{
+        top: 9.5vh;
+        left: 55vw;
+        height: 1vh;
+    }
+
+    .dsh .overlay-chart-r{
+        top: -13vh;
+    }
+
+    .dsh .chart .chart-cont{
+    
+        height: 60vh !important;
+
+    }
+
+    .dsh .overlay-chart-r img{
+        margin-left: -19vw;
+        
+    }
+
+    .dsh .overlay-chart-l img{
+        margin-left: -26.4vw;
+    }
+
+    .dsh .overlay-cloud{
+        top: 207.5vh;
+    }
+    .dsh .overlay-cloud  img{
+        height: 15vh;
+        margin-right: -9vw;
+    }
+}
+@media screen and (max-width: 480px){
+    .dsh .chart .d-btn{
+        top: 10vh;
+        left: 55vw;
+    }
+}
+@media screen and (max-width: 380px){
+    .dsh .chart .d-btn{
+        top: 12.5vh;
+        left: 62vw;
+    }
+
+    .dsh .overlay-chart-r{
+        top: -7vh;
+    }
+
+    .dsh .chart {
+        
+        width: 100vw;
+    }
+
+    .dsh .chart .chart-cont{
+    
+        height: 58vh !important;
+
+    }
+
+
+    .dsh .chart .chart-cont{
+    
+        max-width: 98vw;
+    }
+
+
+    .dsh .overlay-chart-r img{
+        height: 30vh;
+        margin-left: -31vw;
+        
+    }
+
+    .dsh .overlay-chart-l{
+        left: 0vw;
+    }
+    .dsh .overlay-chart-l img{
+        margin-left: -45.4vw;
+    }
+
+    .dsh .overlay-cloud  img{
+        margin-right: -14vw;
+    }
+}

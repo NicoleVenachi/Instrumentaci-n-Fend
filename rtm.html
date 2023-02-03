@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+        <title>Co Plant</title>
+
+        <link rel="icon" type="image/png" href="assets/logorm.png" />
+
+        <link href="https://fonts.googleapis.com/css?family=Inter|Poppins|Oswald" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./public/stylesHeader.css">
+        <link rel="stylesheet" href="./public/stylesRtm.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+        <i id='burger-button' class="icon-menu burger-button"></i>
+        <header class="header">
+            <div class="container">
+                
+                <nav class="menu">
+                    <figure class="logo">
+                        <img src="./assets/logorm.png" height="70" alt="Logo" />
+                    </figure>
+
+                    <div class="tags is-active"> 
+                        <ol>
+                            <li>
+                                <a class="link" href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                
+                                <a class="link onpage" href="#">Real Time <br> Monitoring</a>
+                            </li>
+                            <li>
+                                <a class="link" href="./dashboard.html">Dashboard</a>
+                            </li>
+                            <li>
+                                <a class="link" href="./map.html">Map</a>
+                            </li>
+                            <li>
+                                <a class="link" href="./contact.html">Contact Us</a>
+                            </li>
+                        </ol>
+                    </div>
+
+                </nav>
+
+                <div class="login is-active"> 
+                    <ol>
+                        <li>
+                            <a class="link" href="">Log in</a>
+                        </li>
+                        <li>
+                            <a class="link border" href="">Sign up</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </header>
+        
+        <section class="rtm">
+            <div class="container">
+
+                <div class="card-cont-outter infoItems">
+                    <div class="card-cont">
+                        <div class="card">
+                            <h3 class="title"> Temprature </h3>
+                            
+                            <div class="card-iner">
+                                <div class="asset">
+                                    <figure class="logo">
+                                        <img src="./assets/sun-icon.png" alt="Sun Img" />
+                                    </figure>
+                                </div>
+                                <p id='card-temp' class="data"> </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card-cont">
+    
+                        <div class="card inside">
+
+                            <h3 class="title"> Humidity </h3>
+    
+                            <div class="card-iner">
+                                <p id='card-hum' class="data"> </p>
+                                <div id='statusBar' class="asset"> 
+                                    <div id="statusBar-inner">
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+    
+                        </div>
+                        <div class="card inside">
+                            <h3 class="title"> Light Intensity </h3>
+    
+                            <p id='card-li' class="data"> </p>
+                            
+                        </div>
+    
+                    </div>
+                </div>
+                
+
+                <div class="card-cont-outter">
+                    <div class="card-cont">
+
+                        <div class="card map">
+                            <h3 class="title"> Position </h3>
+    
+                            <div id="map" class="asset"> </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+
+                
+            </div>
+            <div class="overlay-cont">
+
+            </div>
+
+            <div class="overlay-pl-b">
+                <figure class="pl">
+                    <img src="./assets/pl-b.png" alt="Plant Left" />
+                </figure>
+            </div>
+
+            <div class="overlay-pl-w">
+                <figure class="pl">
+                    <img src="./assets/pl-w.png" alt="Plant Right" />
+                </figure>
+            </div>
+        </section>
+
+        <div class="modal">
+
+        </div>
+
+
+        <script src="./public/toggleBtn.js"></script>
+        <script defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5ivmk4uCq1tSBwdkP6YzWHDXsJvNoK7s&callback=initMap&v=weekly">
+        </script>
+        <script src="./public/pBar.js"></script>
+
+    </body>
+</html>

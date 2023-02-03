@@ -1,0 +1,312 @@
+/***** SEmi generales */
+
+.rtm h3{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rtm p{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(49, 100, 244, 1);
+    text-align: center;
+}
+
+/*************** RTM  */
+.rtm{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+    height: 50vh;
+    margin-top: 10vh;
+
+    
+    position: relative;
+
+    /* font-family: 'Inter', sans-serif; */
+    color: #030303;
+    
+}
+
+
+.rtm .container {
+    
+    background-color: #F2F2F2;
+    border-radius: 16px;
+
+    z-index: 3;
+    
+    justify-content: space-evenly;
+    
+}
+
+.rtm .card-cont-outter {
+
+    margin: 5vh 0;
+    margin-left: 0vw;
+    width: 36vw;
+
+    
+}
+
+.rtm .card-cont-outter.infoItems {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.rtm .card-cont{
+    height: 40vh;
+
+    border-bottom: rgba(127, 127, 127, 0.85);
+    border-style: solid;
+    border-width: 2px;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.rtm .card {
+    
+
+    width: 17vw;
+
+    height: 40vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.rtm.card-inner{
+    display: inherit;
+    flex-wrap: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+}
+.rtm .card .data{
+    
+    font-size: 6vh;
+
+}
+
+.rtm .card.inside {
+    height: 20vh;
+}
+.rtm .card.map {
+    width: 36vw;
+    margin-right: none;
+}
+
+
+.rtm img {
+    height: 25vh;
+    width: auto;
+}
+
+#statusBar{
+    width: 100%;
+    background-color: #393A3D;
+    border-radius: 13px;
+
+    height: 4.2vh;
+
+    margin-bottom: 5px;
+}
+
+#statusBar-inner {
+    width: 15%;
+    background-color: #31F471;
+    border-radius: 13px 0 0 13px;
+
+    height: 4.2vh;
+}
+
+/******** Overlays **********/
+.rtm .overlay-cont {
+
+    height: inherit;
+    width: 76vw;
+    
+
+    background-color: rgba(49, 100, 244, 0.55);
+    border-radius: 16px;
+
+    position: absolute;
+    z-index: 1;
+    margin-top: 3vw;
+    margin-left: 12vw;
+
+
+}
+
+.rtm .overlay-pl-b{
+
+    position: absolute;
+    z-index: 2;
+
+    height: fit-content;
+    width: auto;
+
+    margin-left: 0vw;
+    top: 25vh;
+}
+
+.rtm .overlay-pl-b img{
+
+    height: 45vh;
+    width: auto;
+}
+
+.rtm .overlay-pl-w{
+
+    position: absolute;
+    z-index: 0;
+
+    height: fit-content;
+    width: auto;
+
+    margin-right: 0vw;
+    top: 38vh;
+    right: 5vw;
+}
+
+.rtm .overlay-pl-w img{
+
+    height: 30vh;
+    width: auto;
+}
+
+/* ********MAP */
+
+#map {
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+/* ************ QUERIES ************ */
+
+@media screen and (max-width: 1023px){
+
+    .rtm .overlay-pl-b{
+        margin-left: -5vw;
+    }
+
+    .rtm .overlay-pl-w{
+        margin-right: -5vw;
+    }
+
+    .rtm img {
+        height: 130px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .rtm .card {
+        
+        width: 34vw;
+    }
+
+    .rtm .card-cont-outter {
+        width: 68vw;
+    }
+
+    .rtm .card.map {
+        width: 68vw;
+    }
+
+    .rtm{ 
+        height: 100vh;
+    }
+
+    .rtm .container {
+        width: 80vw;
+    }
+
+    .rtm .overlay-pl-b{
+        z-index: 3;
+        margin-left: -4vw;
+
+        top: 88vh;
+    }
+
+    .rtm .overlay-pl-b img{
+        height: 30vh;
+    }
+
+    .rtm .overlay-pl-w{
+        z-index: 3;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+
+}
+
+@media screen and (max-width: 580px){
+
+    .rtm{ 
+        height: 150vh;
+    }
+    .rtm .card {
+        
+        width: 68vw;
+    }
+
+    .rtm .card-cont-outter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        margin: 0;
+    }
+
+    .rtm .card-cont {
+        margin: 5vh;
+    }
+
+    .rtm .card-cont-outter.infoItems {
+        justify-content: center;
+    }
+    
+
+
+    .rtm .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rtm .overlay-pl-b{
+        top: 138vh;
+    }
+
+    .rtm .overlay-pl-w img{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .rtm .overlay-pl-b img{
+        height: 25vh;
+    }
+
+    .rtm .overlay-pl-w img{
+        height: 20vh;
+    }
+}

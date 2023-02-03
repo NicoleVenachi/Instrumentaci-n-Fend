@@ -1,0 +1,278 @@
+/*************** MAIN  */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+    margin-top: 20px;
+
+    font-family: 'Inter', sans-serif;    
+}
+/****************** DETAILS */
+.main .details {
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    
+    width: 39vw;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    justify-content: space-between;
+    border-left: 10px solid #026fff;
+    padding-left: 10px;
+}
+
+.main .details h6 {
+    letter-spacing: 0.2em;
+    color: #7F7F7F;
+
+    margin: 0;
+    
+    width: inherit;
+}
+
+.main .details .details-text {
+
+    width: inherit;
+    
+    line-height: 110%;
+
+    font-size: 65px;
+    margin: 0;
+
+    font-weight: 600;
+    color: #030303;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main .details .details-description {
+    width: inherit;
+
+    letter-spacing: 0.2em;
+    font-size: 16px;
+    color: #3D3232;
+    margin: 0;
+}
+
+
+.main .details .details-buttons {
+    width: inherit;
+    height: max-content;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .details .details-buttons p {
+    display: inline;
+    width: inherit;
+
+    font-weight: 600;
+    font-size: 0.8em;
+    
+}
+
+.main .details .details-buttons .border {
+    height: initial;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+
+.main .details .details-buttons-try {
+    display: inline;
+    margin-right: 10px;
+    background-color: #3164f4;
+    border-color: #3164f4;
+    color: white;
+}
+
+.main .details .details-buttons-work {
+    display: inline;
+    margin-left: 10px;
+
+    border-color: #030303;
+    color: #030303;
+}
+
+/************ layout */
+.main .layout {
+    margin: 0;
+}
+
+.main .layout img {
+    min-height: 50vh;
+    max-height: 70vh;
+    max-width: 39vw;
+
+    height: auto;
+    width: auto;
+    
+}
+
+/********** Extra */
+
+.extra{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+.extra p {
+    width: 27vw;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+/* ************ QUERIES ************ */
+
+@media screen and (max-width: 1023px){
+
+    .main .details {
+        width: 43.5vw;
+    }
+
+    .main .layout img {
+        max-width: 43.5vw;
+    }
+
+    .main .details .details-text {
+        font-size: 60px;
+    }
+
+    .extra p {
+        width: 40vw;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .main .details .details-text {
+        font-size: 50px;
+    }
+
+    .main .layout img {
+        min-height: 50vh;
+    }
+
+    .extra p {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    .main .details .details-text {
+        font-size: 30px;
+    }
+
+    .main .details {
+        height: 50vh;
+    }
+
+    .main .details .details-buttons {
+        align-items: flex-end;
+        justify-content: center;
+
+        flex-direction: column;
+    }
+
+    .main .details .details-buttons-try {
+        display: block;
+        margin: 0 0 4px 0;
+
+        
+    }
+
+    .main .details .details-buttons-work {
+        display: block;
+        margin: 0;
+    }
+
+    .extra p {
+        width: 60vw;
+    }
+    .extra {
+        margin: 2vh 0;
+    }
+}
+@media screen and (max-width: 580px){
+    .main .details .details-text {
+        font-size: 43px;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .main .details {
+        width: 80vw;
+        margin-left: 8vw;
+
+        height: 50vh;
+    }
+
+    .main .details .details-buttons {
+        align-items: flex-start;
+    }
+
+    .main .details .details-buttons .border {
+        width: 20vw;    
+    }
+    
+
+    .main .details .details-buttons-work {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .details .details-buttons p {
+        margin: 0;
+    }
+
+    .main .layout img {
+        display: none;
+    }
+
+    .extra p {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+
+    .main .details .details-text {
+        font-size: 35px;
+    }
+
+
+    .main .details .details-buttons .border {
+        width: 60vw;    
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .details .details-buttons p {
+        max-width: fit-content;
+    }
+
+    .extra p {
+        width: 80vw;
+    }
+}
